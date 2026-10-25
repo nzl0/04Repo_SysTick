@@ -1,0 +1,18 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug STM32F407 (OpenOCD)",
+      "type": "cortex-debug",
+      "request": "launch",
+      "servertype": "openocd",
+      "cwd": "${workspaceFolder}",
+      "executable": "${workspaceFolder}/build/debug/systick.elf",
+      "configFiles": ["${workspaceFolder}/openocd.cfg"],
+      "device": "STM32F407VG",
+      "gdbPath": "gdb-multiarch",
+      "runToEntryPoint": "main",
+      "preLaunchTask": "build (debug)"
+    }
+  ]
+}
