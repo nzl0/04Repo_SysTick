@@ -11,6 +11,8 @@ add_executable(${PROJECT_NAME}
     src/main.c
     startup/startup_stm32f407xx.c
 )
+set_target_properties(${PROJECT_NAME} PROPERTIES SUFFIX ".elf")
+
 
 target_include_directories(${PROJECT_NAME} PRIVATE include)
 

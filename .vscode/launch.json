@@ -10,9 +10,11 @@
       "executable": "${workspaceFolder}/build/debug/systick.elf",
       "configFiles": ["${workspaceFolder}/openocd.cfg"],
       "device": "STM32F407VG",
+      "interface": "swd",
       "gdbPath": "gdb-multiarch",
       "runToEntryPoint": "main",
-      "preLaunchTask": "build (debug)"
+      "preLaunchTask": "build (debug)",
+      "showDevDebugOutput": "none"
     }
   ]
 }
